@@ -13,12 +13,28 @@ body {
   padding: 40px;
 }
 
+/* MAIN LAYOUT */
+
 .header {
   margin-bottom: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
+.byte-form {
+  background-color: rgb(69, 69, 69);
+  margin-bottom: 40px;
+  padding: 16px 40px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 245px 1fr;
+  gap: 48px;
+}
+
+/* ELEMENTS */
 
 .logo {
   display: flex;
@@ -34,18 +50,16 @@ h1 {
   margin-top: 6px;
 }
 
-.byte-form {
-  background-color: rgb(69, 69, 69);
-  margin-bottom: 40px;
-  padding: 16px 40px;
-}
-
 .byte {
   font-size: 20px;
   line-height: 1.4;
+  letter-spacing: -1px;
   background-color: rgb(69, 69, 69);
   margin-bottom: 16px;
   padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
 
 .tag {
@@ -57,6 +71,9 @@ h1 {
   padding-right: 10px;
 }
 
+.voting-btns {
+  margin-left: auto;
+}
 ul {
   list-style: none;
 }
